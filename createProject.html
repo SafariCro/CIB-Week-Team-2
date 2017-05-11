@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"
+	<meta charset="UTF-8">
+	<style>
+	
+	
+	body {
+		background: url(Images/mount.jpeg) no-repeat;
+		background-size: 100%;
+	}
+	
+	#project {
+		margin: auto;
+		width: 15%;
+		padding: 10px;
+		box-shadow: 0 0 2px 2px #666;
+		background-color: #F5F5F5;
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+		font-family: 'Oswald', sans-serif
+	}
+	
+	#container {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="project">
+			<form action="createProject.php" method="post">
+			  Project ID:<br>
+			  <input type="text" name="projectID" value="">
+			  <br>
+			  
+			  Poject Name:<br>
+			  <input type="text" name="projectName" value="">
+			  <br>
+			  
+			  <br>
+			  <input type="submit" value="Submit">
+			  
+			  <br><br>
+			  <a href="createEmp.html"> Create a new Employee</a><br>
+			  <a href="createProjectLink.html"> Create a new Project Link</a><br>
+			  <a href="createTimesheet.html"> Create a new Timesheet</a><br>
+			  <a href="viewTimesheet.php"> View Timesheets</a>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"
+	<meta charset="UTF-8">
+	<style>
+	
+	
+	body {
+		background: url(Images/mount.jpeg) no-repeat;
+		background-size: 100%;
+	}
+	
+	#login {
+		margin: auto;
+		width: 15%;
+		padding: 10px;
+		box-shadow: 0 0 2px 2px #666;
+		background-color: #F5F5F5;
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+		font-family: 'Oswald', sans-serif
+	}
+	
+	#container {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="login">
+			<form action="createEmp.php" method="post">
+			  First Name:<br>
+			  <input type="text" name="firstName" value="">
+			  <br>
+			  
+			  Last Name:<br>
+			  <input type="text" name="lastName" value="">
+			  <br>
+			  
+			  Other Names:<br>
+			  <input type="text" name="otherNames" value="">
+			  <br>
+			  
+			  Position:<br>
+			  <input type="text" name="position" value="">
+			  <br>
+			  
+			  Date Of Birth:<br>
+			  <input type="date" name="dateOfBirth" value="">
+			  <br>
+			  
+			  <br>
+			  <input type="submit" value="Submit">
+			  
+			  <br><br>
+			  <a href="createProject.html"> Create a new Project</a><br>
+			  <a href="createProjectLink.html"> Create a new Project Link</a><br>
+			  <a href="createTimesheet.html"> Create a new Timesheet</a><br>
+			  <a href="viewTimesheet.php"> View Timesheets</a>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

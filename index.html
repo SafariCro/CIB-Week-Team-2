@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"
+	<meta charset="UTF-8">
+	<style>
+	
+	
+	body {
+		background: url(Images/mount.jpeg) no-repeat;
+		background-size: 100%;
+	}
+	
+	#login {
+		margin: auto;
+		width: 15%;
+		padding: 10px;
+		box-shadow: 0 0 2px 2px #666;
+		background-color: #F5F5F5;
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+		font-family: 'Oswald', sans-serif
+	}
+	
+	#container {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	#navbar {
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="login">
+			<form action="createEmp.html" method="post">
+			  User name:<br>
+			  <input type="text" name="firstname" value="">
+			  <br>
+			  Password:<br>
+			  <input type="password" name="lastname" value="">
+			  <br><br>
+			  <input type="submit" value="Submit">
+			</form>
+		</div>
+	</div>
+</body>
+</html>

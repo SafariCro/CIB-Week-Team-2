@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"
+	<meta charset="UTF-8">
+	<style>
+	
+	
+	body {
+		background: url(Images/mount.jpeg) no-repeat;
+		background-size: 100%;
+	}
+	
+	#login {
+		margin: auto;
+		width: 15%;
+		padding: 10px;
+		box-shadow: 0 0 2px 2px #666;
+		background-color: #F5F5F5;
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		
+		font-family: 'Oswald', sans-serif
+	}
+	
+	#container {
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	
+	
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="login">
+			<form action="createTimesheet.php" method="post">
+			  Start Date/Time:<br>
+			  <input type="datetime-local" name="startDate" value="">
+			  <br>
+			  
+			  End Date/Time:<br>
+			  <input type="datetime-local" name="endDate" value="">
+			  <br>
+			  
+			  Project ID:<br>
+			  <input type="number" name="projectID" value="">
+			  <br>
+			  
+			  Work Code:<br>
+			  <select name="workCode">
+				  <option value="100374">Work</option>
+				  <option value="999999">Lunch</option>
+				  <option value="999998">Leave</option>
+				  <option value="999997">Bank Holiday</option>
+				  <option value="999996">Sickness</option>
+				  <option value="999995">Compassionate Leave</option>
+			  </select>
+			  
+			  Employee ID:<br>
+			  <input type="number" name="employeeID" value="">
+			  <br>
+			  
+			  <br>
+			  <input type="submit" value="Submit">
+			  
+			  <br><br>
+			  <a href="createEmp.html"> Create a new Employee</a><br>
+			  <a href="createProject.html"> Create a new Project</a><br>
+			  <a href="createProjectLink.html"> Create a new Project Link</a><br>
+			  <a href="viewTimesheet.php"> View Timesheets</a>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
